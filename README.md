@@ -24,7 +24,3 @@
 | npm i npm-run-all --save-dev  | https://www.npmjs.com/package/npm-run-all  | A CLI tool to run multiple npm-scripts in parallel or sequential |
 
 &emsp;
-
-~
-~
-~

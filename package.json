@@ -19,5 +19,13 @@
 		"node-sass": "^7.0.1",
 		"npm-run-all": "^4.1.5",
 		"postcss-cli": "^10.0.0"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/erhanertem/Udemy_Georgia_Restaurant_Project.git"
+	},
+	"bugs": {
+		"url": "https://github.com/erhanertem/Udemy_Georgia_Restaurant_Project/issues"
+	},
+	"homepage": "https://github.com/erhanertem/Udemy_Georgia_Restaurant_Project#readme"
 }
