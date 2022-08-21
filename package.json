@@ -1,7 +1,7 @@
 {
 	"name": "georgia_restaurant",
 	"version": "1.0.0",
-	"description": "Georgia Restaurant Web Page - Create an imaginary web page covering the principles of SASS",
+	"description": "Georgia Restaurant Web Page - Create a fictional web page covering the principles of SASS",
 	"main": "index.js",
 	"scripts": {
 		"watch:sass": "node-sass scss/main.scss css/style.css -w",
@@ -25,7 +25,7 @@
 		"url": "git+https://github.com/erhanertem/Georgia-Restaurant-Project.git"
 	},
 	"bugs": {
-		"url": "https://github.com/erhanertem/Georgia-Restaurant-Projectt/issues"
+		"url": "https://github.com/erhanertem/Georgia-Restaurant-Project/issues"
 	},
 	"homepage": "https://github.com/erhanertem/Georgia-Restaurant-Project#readme"
 }

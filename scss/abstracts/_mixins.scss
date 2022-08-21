@@ -9,3 +9,13 @@
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
+
+@mixin centering($topValue) {
+	position: absolute; //we take it off the block layout and assign relative the parent
+	top: $topValue; //from top notch x% below
+	left: 50%; //centerline to available width
+	transform: translate(
+		-50%,
+		-50%
+	); //centerline to the gravity center of the element
+}

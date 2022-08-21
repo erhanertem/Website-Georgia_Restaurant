@@ -8,15 +8,29 @@
 	position: relative;
 
 	.brand {
-		position: absolute; //we take it off the block layout and assign relative the parent
-		top: 15%; //from top notch 15% below
-		left: 50%; //centerline to available width
-		transform: translate(
-			-50%,
-			-50%
-		); //centerline to the gravity center of the element
-
+		@include centering(15%);
 		display: flex;
 		align-items: center;
 	}
+
+	&-banner {
+		text-align: center;
+		@include centering(50%);
+	}
+}
+
+.main-heading {
+	font-family: $font-dancingScript;
+	font-size: 10rem;
+	font-weight: 300;
+	color: $color-primary;
+	margin-bottom: 4rem;
+}
+
+.sub-heading {
+	font-family: $font-josefinSans;
+	font-size: 6rem;
+	font-weight: 300;
+	color: $color-secondary;
+	margin-bottom: 8rem;
 }
