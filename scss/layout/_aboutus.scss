@@ -1,0 +1,48 @@
+.about-us {
+	height: 90vh;
+
+	display: flex;
+	align-items: center;
+
+	&-left {
+		width: 40%;
+		position: relative;
+		left: -20rem;
+
+		img {
+			width: 100%;
+			opacity: 0.7;
+		}
+	}
+
+	&-right {
+		width: 60%;
+		padding: 0 10rem;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.stars {
+			margin: 3rem 0;
+		}
+
+		.star {
+			font-size: 1.5rem;
+			color: $color-primary;
+			margin-left: 1rem;
+		}
+
+		.description {
+			font-family: $font-josefinSans;
+			font-size: 2.5rem;
+			font-style: italic;
+			color: $color-secondary;
+			text-align: center;
+
+			&::first-letter {
+				padding-left: 5rem; // place an indent for the paragraph
+			}
+		}
+	}
+}
