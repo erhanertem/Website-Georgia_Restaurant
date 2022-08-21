@@ -1,0 +1,29 @@
+.logo {
+	font-size: 7rem;
+	color: $color-primary;
+
+	// in order to define a width and height for the inline element we have to change display to block/flex
+	@include flexLayout;
+
+	width: 110px;
+	height: 110px;
+	border: 3px solid $color-primary;
+	border-radius: 50%;
+
+	margin-right: 2rem;
+}
+
+.main-name {
+	font-family: $font-nunito;
+	font-size: 5rem;
+	color: $color-secondary;
+	@include textStyles;
+}
+
+.sub-name {
+	font-family: $font-josefinSans;
+	font-size: 1.8rem;
+	color: $color-secondary;
+	text-align: center;
+	@include textStyles;
+}

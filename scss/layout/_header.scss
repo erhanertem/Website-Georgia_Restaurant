@@ -1,0 +1,22 @@
+.header {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.5)),
+		url(../../images/bg.jpeg) center no-repeat;
+	background-size: cover;
+
+	position: relative;
+
+	.brand {
+		position: absolute; //we take it off the block layout and assign relative the parent
+		top: 15%; //from top notch 15% below
+		left: 50%; //centerline to available width
+		transform: translate(
+			-50%,
+			-50%
+		); //centerline to the gravity center of the element
+
+		display: flex;
+		align-items: center;
+	}
+}

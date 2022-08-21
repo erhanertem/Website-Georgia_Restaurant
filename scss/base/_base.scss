@@ -10,12 +10,12 @@
 }
 
 html {
-	/*root font size is always selected in the html element */
-	// @ default between 1200 and 1800 we had 10px per 1 rem
-	/* change default font-size=10px => 10/16*100=62.5% is now 1rem */
+	/*root font size is always selected in the html element
+	change default font-size=10px => 10/16*100=62.5% is now 1rem */
 	font-size: 62.5%;
 }
 
 body {
 	box-sizing: border-box;
+	background-color: $color-dark;
 }

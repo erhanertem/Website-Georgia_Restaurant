@@ -22,10 +22,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/erhanertem/Udemy_Georgia_Restaurant_Project.git"
+		"url": "git+https://github.com/erhanertem/Georgia-Restaurant-Project.git"
 	},
 	"bugs": {
-		"url": "https://github.com/erhanertem/Udemy_Georgia_Restaurant_Project/issues"
+		"url": "https://github.com/erhanertem/Georgia-Restaurant-Projectt/issues"
 	},
-	"homepage": "https://github.com/erhanertem/Udemy_Georgia_Restaurant_Project#readme"
+	"homepage": "https://github.com/erhanertem/Georgia-Restaurant-Project#readme"
 }
