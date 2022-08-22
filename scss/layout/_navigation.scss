@@ -12,7 +12,7 @@
 			height: 100vh;
 			background-color: $color-dark;
 			position: fixed; // to have the menu oveer the webpage with fixed pos when scrolling
-			left: 0;
+			left: -50vw; //hide @ initial state
 
 			.left-img {
 				width: 50%;
@@ -41,7 +41,7 @@
 			height: 100vh;
 			background-color: $color-darker;
 			position: fixed; // to have the menu oveer the webpage with fixed pos when scrolling
-			right: 0;
+			right: -50vw; //hide @ initial state
 
 			@include flexLayout;
 		}
