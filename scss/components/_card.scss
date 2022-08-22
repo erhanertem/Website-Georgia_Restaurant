@@ -46,12 +46,18 @@
 			text-transform: uppercase;
 			letter-spacing: 1px;
 
-			color: $color-primary;
-			background-color: $color-white;
+			color: $color-white;
+			background-color: transparent;
 			cursor: pointer;
 			outline: none;
-			border: 1px solid $color-primary;
+			border: 2px solid $color-white;
 			border-radius: 10rem;
+
+			&:hover {
+				color: $color-primary;
+				background-color: $color-dark;
+				border: 2px solid $color-dark;
+			}
 		}
 	}
 

@@ -119,12 +119,17 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #d3ab55;
-  background-color: #fff;
+  color: #fff;
+  background-color: transparent;
   cursor: pointer;
   outline: none;
-  border: 1px solid #d3ab55;
+  border: 2px solid #fff;
   border-radius: 10rem;
+}
+.card-overlay-btn:hover {
+  color: #d3ab55;
+  background-color: #262626;
+  border: 2px solid #262626;
 }
 .card-img {
   -o-object-fit: cover;
