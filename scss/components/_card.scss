@@ -1,0 +1,24 @@
+.card {
+	width: 33.3333%;
+	height: 30vw;
+	position: relative;
+
+	&-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba($color-primary, 0.6);
+		color: $color-white;
+		@extend %fullspace;
+		z-index: 10;
+
+		@include flexLayout;
+		flex-direction: column;
+	}
+
+	&-img {
+		@extend %fullspace;
+		object-fit: cover; // fix the distorted image quality
+		opacity: 0.5;
+	}
+}
