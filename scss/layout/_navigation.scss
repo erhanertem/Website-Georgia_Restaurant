@@ -1,1 +1,75 @@
 // not reusable contents here
+
+.navbar {
+	position: relative; //for z-index to work, pos relative is required
+	z-index: 200;
+
+	&-navigation {
+		display: flex;
+
+		&-left {
+			width: 50vw;
+			height: 100vh;
+			background-color: $color-dark;
+			position: fixed; // to have the menu oveer the webpage with fixed pos when scrolling
+			left: 0;
+
+			.left-img {
+				width: 50%;
+				position: absolute;
+				box-shadow: 0 1.5rem 6rem rgba($color-black, 0.4);
+				opacity: 0.7;
+				border-radius: 1rem;
+
+				&-1 {
+					top: 15%;
+					left: 15%;
+				}
+				&-2 {
+					top: 35%;
+					left: 25%;
+				}
+				&-3 {
+					top: 55%;
+					left: 35%;
+				}
+			}
+		}
+
+		&-right {
+			width: 50vw;
+			height: 100vh;
+			background-color: $color-darker;
+			position: fixed; // to have the menu oveer the webpage with fixed pos when scrolling
+			right: 0;
+
+			@include flexLayout;
+		}
+
+		.nav-list {
+			&-item {
+				list-style: none;
+			}
+
+			&-link {
+				color: $color-secondary;
+				text-decoration: none;
+				font-family: $font-dancingScript;
+				font-size: 5rem;
+				@include textStyles(capitalize);
+
+				display: block;
+				// NOTE: link element is inline and needs to be a block element to have a margin
+				margin: 2rem;
+				text-align: center;
+
+				transition: all 0.3s;
+
+				&:hover {
+					color: $color-primary;
+					letter-spacing: 3px;
+				}
+			}
+		}
+	}
+}
