@@ -1,4 +1,42 @@
 // not reusable contents here
-body {
-	// background-color: red;
+.footer {
+	padding: 7rem 0;
+	@include flexLayout;
+	flex-direction: column;
+
+	&-header {
+		display: flex;
+		align-items: center;
+		margin-bottom: 7rem;
+	}
+
+	.social-media {
+		display: flex;
+		justify-content: space-between;
+
+		width: 30rem;
+		margin-bottom: 7rem;
+
+		&-item {
+			list-style: none;
+		}
+
+		&-link {
+			text-decoration: none;
+			font-size: 50px; // because icons are font based
+			color: $color-secondary;
+			transition: color 0.5s;
+
+			&:hover {
+				color: $color-primary;
+			}
+		}
+	}
+
+	&-copyright-paragraph {
+		font-family: $font-josefinSans;
+		font-size: 1.8rem;
+		color: $color-secondary;
+		@include textStyles(capitalize);
+	}
 }
