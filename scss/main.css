@@ -78,11 +78,15 @@ body {
   width: 33.3333%;
   height: 30vw;
   position: relative;
+  overflow: hidden;
+}
+.card:hover .card-overlay {
+  left: 0;
 }
 .card-overlay {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   background-color: rgba(211, 171, 85, 0.6);
   color: #fff;
   z-index: 10;
@@ -90,6 +94,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: left 0.3s;
 }
 .card-overlay-heading {
   font-family: "Nunito", sans-serif;
@@ -107,8 +112,8 @@ body {
   text-transform: capitalize;
 }
 .card-overlay-btn {
-  width: 150px;
-  height: 40px;
+  width: 15rem;
+  height: 4rem;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
@@ -119,7 +124,7 @@ body {
   cursor: pointer;
   outline: none;
   border: 1px solid #d3ab55;
-  border-radius: 100px;
+  border-radius: 10rem;
 }
 .card-img {
   -o-object-fit: cover;

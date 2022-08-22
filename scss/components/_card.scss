@@ -2,11 +2,17 @@
 	width: 33.3333%;
 	height: 30vw;
 	position: relative;
+	overflow: hidden; //overlay left:-100% needs not to be shown off the overlay area.
+
+	&:hover .card-overlay {
+		left: 0;
+	}
 
 	&-overlay {
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: -100%;
+
 		background-color: rgba($color-primary, 0.6);
 		color: $color-white;
 		@extend %fullspace;
@@ -14,6 +20,8 @@
 
 		@include flexLayout;
 		flex-direction: column;
+
+		transition: left 0.3s;
 
 		&-heading {
 			font-family: $font-nunito;
@@ -29,8 +37,8 @@
 		}
 
 		&-btn {
-			width: 150px;
-			height: 40px;
+			width: 15rem;
+			height: 4rem;
 
 			font-family: $font-josefinSans;
 			font-size: 1.4rem;
@@ -43,7 +51,7 @@
 			cursor: pointer;
 			outline: none;
 			border: 1px solid $color-primary;
-			border-radius: 100px;
+			border-radius: 10rem;
 		}
 	}
 
