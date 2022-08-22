@@ -4,10 +4,10 @@
 	justify-content: center;
 }
 
-@mixin textStyles {
+@mixin textStyles($transform: uppercase) {
 	font-weight: 300;
 	letter-spacing: 2px;
-	text-transform: uppercase;
+	text-transform: $transform;
 }
 
 @mixin centering($topValue) {
