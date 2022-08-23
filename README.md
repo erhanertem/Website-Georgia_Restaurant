@@ -8,7 +8,7 @@
 
 &emsp;
 
-#### Link to Project &rarr; [Georgia_Restaurant Project](https://georgia_restaurant-erhan-ertem.netlify.app)
+#### Link to Project &rarr; [Georgia_Restaurant Project](https://georgiarestaurant-erhan-ertem.netlify.app/)
 
 ---
 
