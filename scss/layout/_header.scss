@@ -26,6 +26,14 @@
 	font-weight: 300;
 	color: $color-primary;
 	margin-bottom: 4rem;
+
+	// @media (max-width: 1600px) {
+	// 	font-size: 8rem;
+	// 	color: red;
+	// }
+	@include breakpoint(max-width 1600px) {
+		font-size: 8rem;
+	}
 }
 
 .sub-heading {
@@ -34,4 +42,19 @@
 	font-weight: 300;
 	color: $color-secondary;
 	margin-bottom: 8rem;
+	text-align: center;
+
+	// @media (max-width: 1600px) {
+	// 	font-size: 5rem;
+	// 	margin-bottom: 5rem;
+	// 	color: red;
+	// }
+	@include breakpoint(max-width 1600px) {
+		font-size: 5rem;
+		margin-bottom: 5rem;
+	}
+	@include breakpoint(max-width 1300px) {
+		font-size: 4rem;
+		margin-bottom: 3rem;
+	}
 }

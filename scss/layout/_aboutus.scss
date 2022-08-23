@@ -10,6 +10,10 @@
 		position: relative;
 		left: -20rem;
 
+		@include breakpoint(max-width 1300px) {
+			left: -15rem;
+		}
+
 		img {
 			width: 100%;
 			opacity: 0.7;
@@ -23,6 +27,10 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
+		@include breakpoint(max-width 1300px) {
+			padding: 0 5rem;
+		}
 
 		.stars {
 			margin: 3rem 0;
@@ -39,7 +47,7 @@
 			font-size: 2.5rem;
 			font-style: italic;
 			color: $color-secondary;
-			text-align: center;
+			text-align: justify;
 
 			&::first-letter {
 				padding-left: 5rem; // place an indent for the paragraph

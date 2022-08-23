@@ -9,8 +9,13 @@
 	height: 110px;
 	border: 3px solid $color-primary;
 	border-radius: 50%;
-
 	margin-right: 2rem;
+
+	text-decoration: none; // gets rid of the artifact on the font icon
+
+	@include breakpoint(max-width 1300px) {
+		left: -15rem;
+	}
 }
 
 .main-name {
