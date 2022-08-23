@@ -13,6 +13,7 @@
 			background-color: $color-dark;
 			position: fixed; // to have the menu oveer the webpage with fixed pos when scrolling
 			left: -50vw; //hide @ initial state
+			transition: left 0.5s cubic-bezier(1, 0, 0, 1);
 
 			.left-img {
 				width: 50%;
@@ -42,6 +43,7 @@
 			background-color: $color-darker;
 			position: fixed; // to have the menu oveer the webpage with fixed pos when scrolling
 			right: -50vw; //hide @ initial state
+			transition: right 0.5s cubic-bezier(1, 0, 0, 1);
 
 			@include flexLayout;
 		}

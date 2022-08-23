@@ -177,6 +177,7 @@ body {
   background-color: #262626;
   position: fixed;
   left: -50vw;
+  transition: left 0.5s cubic-bezier(1, 0, 0, 1);
 }
 .navbar-navigation-left .left-img {
   width: 50%;
@@ -203,6 +204,7 @@ body {
   background-color: #1f1d1d;
   position: fixed;
   right: -50vw;
+  transition: right 0.5s cubic-bezier(1, 0, 0, 1);
   display: flex;
   align-items: center;
   justify-content: center;
