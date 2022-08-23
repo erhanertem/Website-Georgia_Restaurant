@@ -34,6 +34,9 @@
 			@include breakpoint(max-width 650px) {
 				font-size: 2.5rem;
 			}
+			@include breakpoint(max-width 500px) {
+				display: none;
+			}
 		}
 
 		&-paragraph {
@@ -47,6 +50,9 @@
 			}
 			@include breakpoint(max-width 650px) {
 				font-size: 1.5rem;
+			}
+			@include breakpoint(max-width 500px) {
+				display: none;
 			}
 		}
 

@@ -166,6 +166,11 @@ body {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 500px) {
+  .card-overlay-heading {
+    display: none;
+  }
+}
 .card-overlay-paragraph {
   font-family: "Josefin Sans", sans-serif;
   font-size: 3rem;
@@ -182,6 +187,11 @@ body {
 @media (max-width: 650px) {
   .card-overlay-paragraph {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .card-overlay-paragraph {
+    display: none;
   }
 }
 .card-overlay-btn {
@@ -368,6 +378,11 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .footer {
+    padding: 4rem 0;
+  }
+}
 .footer-header {
   display: flex;
   align-items: center;
@@ -378,6 +393,12 @@ body {
   justify-content: space-between;
   width: 30rem;
   margin-bottom: 7rem;
+}
+@media (max-width: 500px) {
+  .footer .social-media {
+    width: 20rem;
+    margin-bottom: 4rem;
+  }
 }
 .footer .social-media-item {
   list-style: none;
@@ -391,6 +412,11 @@ body {
 @media (max-width: 1000px) {
   .footer .social-media-link {
     font-size: 3.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .footer .social-media-link {
+    font-size: 2.5rem;
   }
 }
 .footer .social-media-link:hover {
@@ -409,6 +435,12 @@ body {
     width: 70%;
     margin: auto;
     text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .footer-copyright-paragraph {
+    font-size: 1.4rem;
+    line-height: 1.3;
   }
 }
 
