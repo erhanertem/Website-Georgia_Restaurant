@@ -4,6 +4,7 @@
 	"description": "Georgia Restaurant Web Page - Create a fictional web page covering the principles of SASS",
 	"main": "index.js",
 	"scripts": {
+		"watch": "node-sass -o css scss/main.scss -w",
 		"watch:sass": "node-sass scss/main.scss css/style.css -w",
 		"devserver": "live-server --browser=firefox",
 		"start": "npm-run-all --parallel devserver watch:sass",
