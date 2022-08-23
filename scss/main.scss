@@ -1,6 +1,7 @@
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint"; //import breakpoint sass framework
 @import "abstracts/variables";
-@import "abstracts/extends";
 @import "abstracts/mixins";
+@import "abstracts/extends";
 @import "abstracts/functions";
 
 @import "base/base";
