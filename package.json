@@ -23,10 +23,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/erhanertem/Georgia-Restaurant-Project.git"
+		"url": "git+https://github.com/erhanertem/Website-Georgia_Restaurant.git"
 	},
 	"bugs": {
-		"url": "https://github.com/erhanertem/Georgia-Restaurant-Project/issues"
+		"url": "https://github.com/erhanertem/Website-Georgia_Restaurant/issues"
 	},
-	"homepage": "https://github.com/erhanertem/Georgia-Restaurant-Project#readme"
+	"homepage": "https://github.com/erhanertem/Website-Georgia_Restaurant#readme"
 }
