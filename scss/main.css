@@ -142,6 +142,7 @@ body {
   position: fixed;
   top: 10%;
   right: 5%;
+  z-index: 300;
 }
 .hamburger-menu .menu {
   display: flex;
@@ -153,6 +154,14 @@ body {
   width: 100%;
   height: 4px;
   background-color: #d3ab55;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+  left: 0;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+  right: 0;
 }
 
 .navbar {

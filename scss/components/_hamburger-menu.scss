@@ -7,6 +7,8 @@
 	top: 10%;
 	right: 5%;
 
+	z-index: 300;
+
 	.menu {
 		@extend %fullspace;
 
@@ -22,4 +24,12 @@
 			background-color: $color-primary;
 		}
 	}
+}
+
+// when checkbox is checked which istriggred by clicking the label hamburger menu item, the stowed off the screen left navbar is back to its position for display
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+	left: 0;
+}
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+	right: 0;
 }
