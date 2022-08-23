@@ -42,5 +42,11 @@
 		font-size: 1.8rem;
 		color: $color-secondary;
 		@include textStyles(capitalize);
+
+		@include breakpoint(max-width 800px) {
+			width: 70%;
+			margin: auto;
+			text-align: center;
+		}
 	}
 }

@@ -37,6 +37,13 @@ body {
   outline: none;
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  .main-btn {
+    width: 15rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+  }
+}
 .main-btn:hover {
   background-color: #d3ab55;
   color: #262626;
@@ -172,7 +179,13 @@ body {
   position: fixed;
   top: 10%;
   right: 5%;
-  z-index: 300;
+  z-index: 1300;
+}
+@media (max-width: 800px) {
+  .hamburger-menu {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
 .hamburger-menu .menu {
   display: flex;
@@ -187,6 +200,11 @@ body {
   background-color: #d3ab55;
   transform-origin: right;
   transition: all 0.3s 0.4s;
+}
+@media (max-width: 800px) {
+  .hamburger-menu .menu-line {
+    height: 2.5px;
+  }
 }
 
 .checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
@@ -325,6 +343,13 @@ body {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
+@media (max-width: 800px) {
+  .footer-copyright-paragraph {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+}
 
 .header {
   width: 100%;
@@ -413,6 +438,11 @@ body {
     left: -15rem;
   }
 }
+@media (max-width: 800px) {
+  .about-us-left {
+    display: none;
+  }
+}
 .about-us-left img {
   width: 100%;
   opacity: 0.7;
@@ -427,6 +457,12 @@ body {
 @media (max-width: 1300px) {
   .about-us-right {
     padding: 0 5rem;
+  }
+}
+@media (max-width: 800px) {
+  .about-us-right {
+    width: 100%;
+    line-height: 1.6;
   }
 }
 .about-us-right .stars {

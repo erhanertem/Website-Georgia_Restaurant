@@ -17,6 +17,9 @@
 		@include breakpoint(max-width 1300px) {
 			left: -15rem;
 		}
+		@include breakpoint(max-width 800px) {
+			display: none; //remove the picture off the layout @800px
+		}
 
 		img {
 			width: 100%;
@@ -34,6 +37,10 @@
 
 		@include breakpoint(max-width 1300px) {
 			padding: 0 5rem;
+		}
+		@include breakpoint(max-width 800px) {
+			width: 100%;
+			line-height: 1.6;
 		}
 
 		.stars {

@@ -7,7 +7,12 @@
 	top: 10%;
 	right: 5%;
 
-	z-index: 300;
+	z-index: 1300;
+
+	@include breakpoint(max-width 800px) {
+		width: 3.5rem;
+		height: 3.5rem;
+	}
 
 	.menu {
 		@extend %fullspace;
@@ -27,6 +32,10 @@
 
 			transform-origin: right;
 			transition: all 0.3s 0.4s; //effects &-line-1 thru 3 below w/ 0.5s delay after .menu transition animation
+
+			@include breakpoint(max-width 800px) {
+				height: 2.5px;
+			}
 		}
 	}
 }
