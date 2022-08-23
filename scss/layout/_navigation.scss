@@ -15,6 +15,10 @@
 			left: -50vw; //hide @ initial state
 			transition: left 0.5s cubic-bezier(1, 0, 0, 1);
 
+			@include breakpoint(max-width 800px) {
+				display: none;
+			}
+
 			.left-img {
 				width: 50%;
 				position: absolute;
@@ -22,17 +26,36 @@
 				opacity: 0.7;
 				border-radius: 1rem;
 
+				@include breakpoint(max-width 1300px) {
+					width: 55%;
+				}
+				@include breakpoint(max-width 1000px) {
+					width: 65%;
+				}
+
 				&-1 {
 					top: 15%;
 					left: 15%;
+
+					@include breakpoint(max-width 1000px) {
+						left: 5%;
+					}
 				}
 				&-2 {
 					top: 35%;
 					left: 25%;
+
+					@include breakpoint(max-width 1000px) {
+						left: 15%;
+					}
 				}
 				&-3 {
 					top: 55%;
 					left: 35%;
+
+					@include breakpoint(max-width 1000px) {
+						left: 25%;
+					}
 				}
 			}
 		}
@@ -44,8 +67,12 @@
 			position: fixed; // to have the menu oveer the webpage with fixed pos when scrolling
 			right: -50vw; //hide @ initial state
 			transition: right 0.5s cubic-bezier(1, 0, 0, 1);
-
 			@include flexLayout;
+
+			@include breakpoint(max-width 800px) {
+				width: 100vw;
+				right: -100vw;
+			}
 		}
 
 		.nav-list {
@@ -66,6 +93,10 @@
 				text-align: center;
 
 				transition: all 0.3s;
+
+				@include breakpoint(max-width 600px) {
+					font-size: 4rem;
+				}
 
 				&:hover {
 					color: $color-primary;
