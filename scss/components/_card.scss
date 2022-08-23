@@ -27,6 +27,10 @@
 			font-family: $font-nunito;
 			font-size: 5rem;
 			@include textStyles(capitalize);
+
+			@include breakpoint(max-width 950px) {
+				font-size: 3.5rem;
+			}
 		}
 
 		&-paragraph {
@@ -34,6 +38,10 @@
 			font-size: 3rem;
 			margin-bottom: 3rem;
 			@include textStyles(capitalize);
+
+			@include breakpoint(max-width 950px) {
+				font-size: 2rem;
+			}
 		}
 
 		&-btn {
@@ -50,8 +58,13 @@
 			background-color: transparent;
 			cursor: pointer;
 			outline: none;
-			border: 2px solid $color-white;
-			// border-radius: 10rem;
+			border: 1px solid $color-white;
+
+			@include breakpoint(max-width 950px) {
+				font-size: 1.2rem;
+				width: 13rem;
+				height: 3rem;
+			}
 
 			&:hover {
 				color: $color-primary;

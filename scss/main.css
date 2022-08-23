@@ -116,6 +116,11 @@ body {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
+@media (max-width: 950px) {
+  .card-overlay-heading {
+    font-size: 3.5rem;
+  }
+}
 .card-overlay-paragraph {
   font-family: "Josefin Sans", sans-serif;
   font-size: 3rem;
@@ -123,6 +128,11 @@ body {
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: capitalize;
+}
+@media (max-width: 950px) {
+  .card-overlay-paragraph {
+    font-size: 2rem;
+  }
 }
 .card-overlay-btn {
   width: 15rem;
@@ -136,7 +146,14 @@ body {
   background-color: transparent;
   cursor: pointer;
   outline: none;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
+}
+@media (max-width: 950px) {
+  .card-overlay-btn {
+    font-size: 1.2rem;
+    width: 13rem;
+    height: 3rem;
+  }
 }
 .card-overlay-btn:hover {
   color: #d3ab55;
@@ -380,6 +397,11 @@ body {
   height: 90vh;
   display: flex;
   align-items: center;
+}
+@media (max-width: 900px) {
+  .about-us {
+    height: 70vh;
+  }
 }
 .about-us-left {
   width: 40%;
