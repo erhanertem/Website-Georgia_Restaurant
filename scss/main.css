@@ -149,11 +149,14 @@ body {
   flex-direction: column;
   justify-content: space-around;
   cursor: pointer;
+  transition: transform 0.3s;
 }
 .hamburger-menu .menu-line {
   width: 100%;
   height: 4px;
   background-color: #d3ab55;
+  transform-origin: right;
+  transition: all 0.3s 0.4s;
 }
 
 .checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
@@ -162,6 +165,19 @@ body {
 
 .checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
   right: 0;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu {
+  transform: rotateZ(90deg);
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+  transform: rotateZ(-40deg);
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+  opacity: 0;
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+  transform: rotateZ(40deg);
 }
 
 .navbar {

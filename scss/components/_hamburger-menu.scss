@@ -18,10 +18,15 @@
 
 		cursor: pointer;
 
+		transition: transform 0.3s; // animation from = to x pos
+
 		&-line {
 			width: 100%;
 			height: 4px;
 			background-color: $color-primary;
+
+			transform-origin: right;
+			transition: all 0.3s 0.4s; //effects &-line-1 thru 3 below w/ 0.5s delay after .menu transition animation
 		}
 	}
 }
@@ -32,4 +37,20 @@
 }
 .checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
 	right: 0;
+}
+
+//hamburger menu transform to x configuration
+.checkbox:checked ~ .hamburger-menu .menu {
+	transform: rotateZ(90deg);
+
+	&-line-1 {
+		transform: rotateZ(-40deg);
+	}
+	&-line-2 {
+		opacity: 0;
+		// display: none; --> if this is used, then we have to manually position line 1 and 3.
+	}
+	&-line-3 {
+		transform: rotateZ(40deg);
+	}
 }
