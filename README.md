@@ -16,11 +16,12 @@
 
 #### Installed NPM packages:
 
-| Package command               | Package link                               | Description                                                      |
-| ----------------------------- | ------------------------------------------ | ---------------------------------------------------------------- |
-| npm i node-sass --save-dev    | https://www.npmjs.com/package/node-sass    | CSS preprocessor                                                 |
-| npm i autoprefixer --save-dev | https://www.npmjs.com/package/autoprefixer | Add vendor prefixes to CSS, a PostCSS plugin                     |
-| npm i postcss-cli --save-dev  | https://www.npmjs.com/package/postcss-cli  | Node package dependency for autoprefixer                         |
-| npm i npm-run-all --save-dev  | https://www.npmjs.com/package/npm-run-all  | A CLI tool to run multiple npm-scripts in parallel or sequential |
+| Package command                  | Package link                                  | Description                                                      |
+| -------------------------------- | --------------------------------------------- | ---------------------------------------------------------------- |
+| npm i node-sass --save-dev       | https://www.npmjs.com/package/node-sass       | CSS preprocessor                                                 |
+| npm i autoprefixer --save-dev    | https://www.npmjs.com/package/autoprefixer    | Add vendor prefixes to CSS, a PostCSS plugin                     |
+| npm i postcss-cli --save-dev     | https://www.npmjs.com/package/postcss-cli     | Node package dependency for autoprefixer                         |
+| npm i npm-run-all --save-dev     | https://www.npmjs.com/package/npm-run-all     | A CLI tool to run multiple npm-scripts in parallel or sequential |
+| npm i breakpoint-sass --save-dev | https://www.npmjs.com/package/breakpoint-sass | Breakpoint makes writing media queries in Sass super simple.     |
 
 &emsp;
