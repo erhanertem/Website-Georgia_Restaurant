@@ -17,6 +17,11 @@
 		height: 3.5rem;
 		font-size: 1.2rem;
 	}
+	@include breakpoint(max-width 500px) {
+		width: 13rem;
+		height: 3rem;
+		font-size: 1rem;
+	}
 
 	&:hover {
 		background-color: $color-primary;
