@@ -23,9 +23,13 @@
 
 		&-link {
 			text-decoration: none;
-			font-size: 50px; // because icons are font based
+			font-size: 5rem; // because icons are font based
 			color: $color-secondary;
 			transition: color 0.5s;
+
+			@include breakpoint(max-width 1000px) {
+				font-size: 3.5rem;
+			}
 
 			&:hover {
 				color: $color-primary;

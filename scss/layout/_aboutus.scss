@@ -40,6 +40,10 @@
 			font-size: 1.5rem;
 			color: $color-primary;
 			margin-left: 1rem;
+
+			@include breakpoint(max-width 1000px) {
+				font-size: 1.2rem;
+			}
 		}
 
 		.description {
@@ -48,6 +52,13 @@
 			font-style: italic;
 			color: $color-secondary;
 			text-align: justify;
+
+			@include breakpoint(max-width 1600px) {
+				font-size: 1.8rem;
+			}
+			@include breakpoint(max-width 1000px) {
+				font-size: 1.4rem;
+			}
 
 			&::first-letter {
 				padding-left: 5rem; // place an indent for the paragraph

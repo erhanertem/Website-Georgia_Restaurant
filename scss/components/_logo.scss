@@ -5,16 +5,18 @@
 	// in order to define a width and height for the inline element we have to change display to block/flex
 	@include flexLayout;
 
-	width: 110px;
-	height: 110px;
+	width: 11rem;
+	height: 11rem;
 	border: 3px solid $color-primary;
 	border-radius: 50%;
 	margin-right: 2rem;
 
 	text-decoration: none; // gets rid of the artifact on the font icon
 
-	@include breakpoint(max-width 1300px) {
-		left: -15rem;
+	@include breakpoint(max-width 1000px) {
+		font-size: 5rem;
+		width: 9rem;
+		height: 9rem;
 	}
 }
 
@@ -23,6 +25,10 @@
 	font-size: 5rem;
 	color: $color-secondary;
 	@include textStyles;
+
+	@include breakpoint(max-width 1000px) {
+		font-size: 4rem;
+	}
 }
 
 .sub-name {
