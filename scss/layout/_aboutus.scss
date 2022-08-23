@@ -8,7 +8,9 @@
 	@include breakpoint(max-width 900px) {
 		height: 70vh;
 	}
-
+	@include breakpoint(max-width 500px) {
+		margin-bottom: 4rem;
+	}
 	&-left {
 		width: 40%;
 		position: relative;
@@ -34,6 +36,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 
 		@include breakpoint(max-width 1300px) {
 			padding: 0 5rem;
